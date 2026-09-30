@@ -39,16 +39,41 @@
             text-align: right;
         }
 
-        .linha {
-            height: 200px;
+        .numer {
+            text-align: left;
         }
+
+        .nume {
+            text-align: center;
+        }
+
+        .num {
+            text-align: top;
+        }
+
+        .nu {
+            text-align: middle;
+        }
+
+        .n {
+            text-align: bottom;
+        }
+
+        .linha {
+            height: 50px;
+        }
+
+        .linh {
+            height: 150px;
+        }
+
         
 
 
     </style>
 </head>
 <body>
-    <h1>Minha primeira tabela</h1>
+    <h1>Gabarito - Trabalhando com alinhamento</h1>
     <!-- É utilzado para criar organização de dados -->
     <!-- 
         Hierarquia de tabelas (Simples)
@@ -57,24 +82,24 @@
                 Table Header = cabeçalho de tabela Data = dado da tabela Data = dado da tabela
     -->
     <table>
-        <tr> <!-- Primeira linha -->
-            <td>A1</td>
-            <td>B1</td>
-            <td>C1</td>
+        <tr class="linha"> <!-- Primeira linha -->
+            <td class="numer">A1 (esquerda)</td>
+            <td class="nume">B1 (padrão centro)</td>
+            <td class="numero">C1 (direita)</td>
         </tr> <!-- Segunda linha -->
-        <tr >
-            <td>A2</td>
-            <td>B2</td>
-            <td class="numero">C2</td>
+        <tr class="linh">
+            <td class="num">A2 (topo)</td>
+            <td class="nu">B2 (padrão)</td>
+            <td class="n">C2 (baixo)</td>
         </tr>
-        <tr> <!-- Terceira linha -->
-            <td>A3</td>
-            <td>B3</td>
-            <td class="numero">C3</td>
+        <tr class="linh"> <!-- Terceira linha -->
+            <td class="num">A3 (topo)</td>
+            <td class="n">B3 (baixo)</td>
+            <td class="nu">C3 (padrão)</td>
         </tr>
-        <tr> <!-- Quarta linha -->
+        <tr class="linha"> <!-- Quarta linha -->
             <td>A4</td>
-            <td class="dado">B4</td>
+            <td class="numero">1000 (número á direita)</td>
             <td>C4</td>
         </tr>
 
